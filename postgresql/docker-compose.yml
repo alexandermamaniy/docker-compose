@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    ports:
+       - "5432:5432"
+    environment:
+       - POSTGRES_PASSWORD=Lirium123
+       - POSTGRES_USER=lirium
+       - POSTGRES_DB=ninio_mensajero
+    volumes:
+       - "${PWD}/data_postgres:/var/lib/postgresql/data"
