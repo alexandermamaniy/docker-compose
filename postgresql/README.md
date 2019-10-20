@@ -29,7 +29,7 @@ docker-compose up -d
 
 detenemos docker-compose
 ```
-docke-compose down
+docker-compose down
 ```
 
 ingresamos a la base de datos
